@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>A.C Currencies Converter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.C Currencies Converter</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div class="app">
-    <h1>A.C CURRENCIES CONVERTER</h1>
-    <p class="subtitle">Live Global Currency Conversion</p>
 
-    <div class="field">
-      <label>From Continent</label>
-      <select id="fromContinent"></select>
-    </div>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>A.C Currencies Converter</h1>
+        <p>Convert any currency from anywhere in the world — fast & accurate</p>
+    </header>
 
-    <div class="field">
-      <label>From Country</label>
-      <select id="fromCountry"></select>
-    </div>
+    <!-- MAIN CONVERTER -->
+    <main class="converter-container">
 
-    <div class="field">
-      <label>Amount</label>
-      <input type="number" id="amount" value="1" min="0">
-    </div>
+        <!-- FROM -->
+        <section class="conversion-section">
+            <h2>Currency Conversion</h2>
 
-    <hr>
+            <div class="convert-box">
 
-    <div class="field">
-      <label>To Continent</label>
-      <select id="toContinent"></select>
-    </div>
+                <label>From Currency</label>
+                <select id="fromCurrency"></select>
 
-    <div class="field">
-      <label>To Country</label>
-      <select id="toCountry"></select>
-    </div>
+                <input type="number" id="amount" placeholder="Enter amount">
 
-    <button id="convertBtn">Convert</button>
+                <label>Convert To</label>
+                <select id="toCurrency"></select>
 
-    <div class="result" id="result">—</div>
+                <button id="convertBtn">Convert</button>
 
-    <footer>
-      <span>© 2026 A.C Currencies Converter</span>
-      <span>All rights reserved.</span>
-      <span>Powered by <strong>BMT Mobile</strong></span>
-      <span>@emmpatech-empire</span>
-      <span>Contact: <a href="mailto:eemmpatech@gmail.com">eemmpatech@gmail.com</a></span>
+                <div class="result-box">
+                    <p id="fromText">Amount</p>
+                    <h3 id="result">0.00</h3>
+                    <p id="toText">Converted Amount</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 A.C Currencies Converter. All rights reserved.</p>
+        <p>Powered by <strong>BMT Mobile</strong></p>
+        <p>@emmpatech-empire</p>
+        <p>Contact for our services: <a href="mailto:eemmpatech@gmail.com">eemmpatech@gmail.com</a></p>
     </footer>
-  </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
+
