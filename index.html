@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A.C Currencies Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app">
+    <h1>A.C CURRENCIES CONVERTER</h1>
+    <p class="subtitle">Live Global Currency Conversion</p>
+
+    <div class="field">
+      <label>From Continent</label>
+      <select id="fromContinent"></select>
+    </div>
+
+    <div class="field">
+      <label>From Country</label>
+      <select id="fromCountry"></select>
+    </div>
+
+    <div class="field">
+      <label>Amount</label>
+      <input type="number" id="amount" value="1" min="0">
+    </div>
+
+    <hr>
+
+    <div class="field">
+      <label>To Continent</label>
+      <select id="toContinent"></select>
+    </div>
+
+    <div class="field">
+      <label>To Country</label>
+      <select id="toCountry"></select>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div class="result" id="result">—</div>
+
+    <footer>
+      <span>© 2026 A.C Currencies Converter</span>
+      <span>All rights reserved.</span>
+      <span>Powered by <strong>BMT Mobile</strong></span>
+      <span>@emmpatech-empire</span>
+      <span>Contact: <a href="mailto:eemmpatech@gmail.com">eemmpatech@gmail.com</a></span>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
